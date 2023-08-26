@@ -1,6 +1,6 @@
 html,
 body {
-  overflow: hidden;
+  overflow: 0;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -197,7 +197,7 @@ a{
 }
 
 .backToTop{
-  display: none !important;
+  display: none;
 }
 
 a:hover{
@@ -286,11 +286,13 @@ a:hover{
   .backToTop{
     display: flex;
     border-radius: 50% !important;
+    font-size: 15px;
     padding: 11px !important;
     position: fixed;
-    left: 0;
+    left: 2%;
     bottom: 4vh;
     opacity: 0.7;
+    border: 2px solid rgb(250, 77, 96);
   }
 
   .backToTop > a {
@@ -362,3 +364,4 @@ li {
 }
 
 /*Button end*/
+
