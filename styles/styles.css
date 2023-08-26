@@ -197,7 +197,7 @@ a{
 }
 
 .backToTop{
-  display: none;
+  display: none !important;
 }
 
 a:hover{
