@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="../images/icons/fan-svgrepo-com(1).svg">
+    <title>Fanatics</title>
+  </head>
+  <body>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+          x.style.flexDirection = "column";
+          x.style.justifyContent = "center";
+        }
+      }
+    </script>
+    
+    <nav>
+      <ul>
+        <div class="icon">
+          <a href="#"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
+        </div>
+        
+        <div class="nav-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="nav">
+      <a href="javascript:void(0);" class="burger" onclick="myFunction()">
+        <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="nav-right" id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+        </div>
+    </div>
+    
+    <main>
+      <h1>
+        About us
+      </h1>
+
+      <h2>
+        Leading the air cooling industry since <span>1943</span>.
+      </h2>
+    </main>
+    
+    <article> 
+      <p class="subtitle">
+        Our history
+      </p>
+      <p>
+        Founded in Wolfsburg, Germany in 1943 Fanatics history begins at the end of the Second World War, once the war was over the British instructed Fanatics to build the <span>Fanatics saloon</span> at the end of 1945. With the <span>Type 1 (Käfer)</span> model, and the <span>Type 2 (Transporter)</span> model added in 1950, 
+        Fanatics became a symbol of Germany's economic miracle, above all as a result of the strong export orientation on the part of the company converted into a joint stock corporation in 1960. 
+        Innovative and flexible manufacturing systems made an appearance in the 1970s and led to the birth of a new generation of fans and cooling systems with the <span>Passat</span>, <span>Scirocco</span>, <span>Golf</span> and <span>Polo</span> models. 
+        Growth was boosted in the 1980s through advances in the field of aerodynamics, flexible production, and forward-looking international cooperation. 
+        Now Fanatics leads the industry with the core principles of <span>innovation</span> and <span>sustainability</span> ensuring the best for future generations.
+      </p>
+    </article>
+
+    <article id="locations"> 
+      <p class="subtitle">
+        Where to find us
+      </p>
+      <p>
+        Our main headquarters are located in Wolfsburg, Germany available from 08:00 to 18:00 EST time.
+      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4866.333262152236!2d10.7822924!3d52.4217784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47af924b829f4787%3A0x94cd12cbeb79f0f8!2sIrish%20Pub%20Wob-Wolfsburg!5e0!3m2!1sde!2suy!4v1690417590086!5m2!1sde!2suy" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+
+      <p>
+        Our secondary headquarters are located in Montevideo, Uruguay available from 10:00 to 20:00 EST time.
+      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.99645258385095!2d-56.148560306083354!3d-34.90415012704113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f810fce50b97d%3A0x476ed1e8b3d06183!2sLa%20tienda%20de%20Chela!5e0!3m2!1sen!2suy!4v1690417005800!5m2!1sen!2suy" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </article>
+        
+    <footer>
+      Connect with us: 
+      <ul>
+        <li><a href="https://www.instagram.com/"><img src="../images/icons/instagram-167-svgrepo-com.svg" alt="Instagram icon" loading="lazy"></a></li>
+        <li><a href="https://www.pinterest.com/"><img src="../images/icons/pinterest-color-svgrepo-com.svg" alt="Pinterest icon" loading="lazy"></a></li>
+        <li><a href="https://twitter.com/home"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
