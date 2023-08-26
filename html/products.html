@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="../images/icons/fan-svgrepo-com(1).svg">
+    <title>Fanatics</title>
+  </head>
+  <body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+          x.style.flexDirection = "column";
+          x.style.justifyContent = "center";
+        }
+      }
+    </script>
+    
+    <nav>
+      <ul>
+        <div class="icon">
+          <a href="#"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
+        </div>
+        
+        <div class="nav-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="nav">
+      <a href="javascript:void(0);" class="burger" onclick="myFunction()">
+        <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="nav-right" id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+        </div>
+    </div>
+    
+    <main>
+      <h1 class="list-unstyled">
+        Products
+      </h1>
+
+      <h2>
+        Find the <span>exact</span> fan for you.
+      </h2>
+    </main>
+
+    <article>
+      <p class="subtitle">
+        Top sellers
+      </p>
+      <p>
+        These are some of our most requested products that you might be interested in
+      </p>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#WallMounted">
+              <img src="../images/fans/DDR-Ring-Fan.jpg" alt="Picture of a ring wall mounted fan">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#Axial">
+              <img src="../images/fans/TFBD-Axial-FRP-Fan.jpg" alt="Picture of an axial fan">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#Centrifugal">
+              <img src="../images/fans/CAE-SW-Centrifugal-Fan.jpg" alt="Picture of a centrifugal fan">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#Centrifugal">
+              <img src="../images/fans/SWCBF-Centrifugal-FRP-Fan.jpg" alt="Picture of a centrifugal fan">
+            </a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <img src="../images/icons/down-chevron-svgrepo-com.svg" id="previousImage" alt="Previous">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <img src="../images/icons/down-chevron-svgrepo-com.svg" id="nextImage" alt="Next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </article>
+    
+    <article id="WallMounted"> 
+      <p class="subtitle">
+        Wall Mounted Fans
+      </p>
+      <p>
+        Wall Mounted Fans are designed for cost effective, general ventilation. 
+        They are available in direct and belt driven models, with aluminum or steel impellers. 
+        Fixed or adjustable pitch models are offered to meet a variety of application requirements. 
+        Wall Mounted Fans are available in ring or panel construction as well as standard or reverse flow.
+      </p>
+      <div id="products">
+        <img src="../images/fans/DDR-Ring-Fan.jpg" alt="Picture of a ring wall mounted fan" loading="lazy">
+        <img src="../images/fans/DDP-Propeller-Wall-Fan.jpg" alt="Picture of a propeller wall mounted fan" loading="lazy">
+        <img src="../images/fans/FDP-Propeller-Wall-FRP-Fan.jpg" alt="Picture of a propeller wall mounted fan" loading="lazy">
+      </div>
+ 
+    </article>
+
+    <article id="Axial"> 
+      <p class="subtitle">
+        Axial Fans
+      </p>
+      <p>
+        Tubeaxial Fans are designed to handle a wide range of requirements, from general ventilation to process air supply. 
+        The mounting flexibility makes it an ideal choice for many industrial and commercial applications. 
+        Units are available as direct or belt driven, with steel or aluminum impellers that are fixed or adjustable blade pitch.
+
+        Vaneaxial Fans are designed for applications where large volumes of air are required at moderate to high pressures. 
+        Direct and belt driven models, with fixed and adjustable blade impellers, are available. 
+        The tubular design and high impeller efficiency provides maximum performance while using minimal space.
+      </p>
+      <div id="products">
+        <img src="../images/fans/BSTA-Axial-Fan.jpg" alt="Picture of an axial fan" loading="lazy">
+        <img src="../images/fans/TFBD-Axial-FRP-Fan.jpg" alt="Picture of an axial fan" loading="lazy">
+        <img src="../images/fans/VJBD-Axial-Fan.jpg" alt="Picture of an axial fan" loading="lazy">
+      </div>
+    </article>
+
+    <article id="Centrifugal"> 
+      <p class="subtitle">
+        Centrifugal Fans
+      </p>
+      <p>
+        Centrifugal fans are designed for a wide range of air volumes and pressures. 
+        With backward inclined, backward curved, backward inclined airfoil, radial and forward curved impeller types, 
+        centrifugal fans offer the flexibility to match the performance and application at the highest efficiency. 
+        Most models are available in single-wide or double-wide configurations that allow for even higher volumes of air.
+      </p>
+      <div id="products">
+        <img src="../images/fans/CAE-DW-Centrifugal-Fan.jpg" alt="Picture of a centrifugal fan" loading="lazy">
+        <img src="../images/fans/CAE-SW-Centrifugal-Fan.jpg" alt="Picture of a centrifugal fan" loading="lazy">
+        <img src="../images/fans/SWCBF-Centrifugal-FRP-Fan.jpg" alt="Picture of a centrifugal fan" loading="lazy">
+      </div>
+    </article>
+        
+    <footer>
+      Connect with us: 
+      <ul>
+        <li><a href="https://www.instagram.com/"><img src="../images/icons/instagram-167-svgrepo-com.svg" alt="Instagram icon" loading="lazy"></a></li>
+        <li><a href="https://www.pinterest.com/"><img src="../images/icons/pinterest-color-svgrepo-com.svg" alt="Pinterest icon" loading="lazy"></a></li>
+        <li><a href="https://twitter.com/home"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
