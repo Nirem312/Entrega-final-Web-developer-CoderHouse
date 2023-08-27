@@ -153,7 +153,7 @@ textarea{
 }
 
 .subtitle{
-  color: rgb(25, 25, 25);
+  color: #fa4d60;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -224,6 +224,10 @@ a:hover{
 
   footer > ul{
     flex-direction: row;
+  }
+
+  footer{
+    margin-bottom: 25px;
   }
 
   nav, .nav-right{
