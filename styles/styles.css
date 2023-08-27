@@ -321,9 +321,10 @@ textarea{
     padding: 11px !important;
     position: fixed;
     left: 2%;
-    bottom: 4vh;
+    bottom: 7vh;
     opacity: 0.7;
     border: 2px solid rgb(250, 77, 96);
+    height: 65px;
   }
 
   .backToTop > a {
@@ -331,7 +332,7 @@ textarea{
   }
 
   .backToTop > a > img {
-    height: 32px;
+    height: 37px;
     transform: rotate(180deg);
   }
 
