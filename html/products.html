@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css"/>
     <link rel="icon" type="image/x-icon" href="../images/icons/fan-svgrepo-com(1).svg">
@@ -11,10 +12,13 @@
   </head>
   <body>
 
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <script>
-      function myFunction() {
+      //Esconde o muestra el menu en version movil cuando se clickea el icono
+      function toggleMenu() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "flex") {
           x.style.display = "none";
@@ -26,36 +30,34 @@
       }
     </script>
 
-    <div class="nav">
-      <a href="javascript:void(0);" class="burger" onclick="myFunction()">
+    <!-- Menu para version movil -->
+    <div class="mobileMenu">
+      <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
         <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
         <i class="fa fa-bars"></i>
       </a>
-      <div class="nav-right" id="myLinks">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="services.html">Services</a></li>
-        </div>
+      <div class="mobileMenuNav" id="myLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </div>
     </div>
     
+    <!-- Nav bar -->
     <nav>
       <ul>
-        <div class="icon">
-          <a href="#"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
-        </div>
-        
-        <div class="nav-right">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="services.html">Services</a></li>
-        </div>
+        <a href="#" id="icon"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
 
+    <!-- Boton para volver arriba -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
     
     <main>
@@ -75,6 +77,8 @@
       <p>
         These are some of our most requested products that you might be interested in
       </p>
+      
+      <!-- Bootstrap carousel -->
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
