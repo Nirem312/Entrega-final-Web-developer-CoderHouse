@@ -8,10 +8,13 @@
     <link rel="icon" type="image/x-icon" href="../images/icons/fan-svgrepo-com(1).svg">
     <title>Fanatics</title>
   </head>
-  <body>
+  <body onload="colorNavBar()">
 
     <script>
-      //Esconde o muestra el menu en version movil cuando se clickea el icono
+      function colorNavBar(){
+        let y = document.getElementById("list-item-index");
+        y.style.borderBottom = "2px solid #e13238"
+      }
       function toggleMenu() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "flex") {
@@ -24,7 +27,6 @@
       }
     </script>
 
-    <!-- Menu para version movil -->
     <div class="mobileMenu">
       <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
         <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
@@ -39,7 +41,6 @@
       </div>
     </div>
     
-    <!-- Nav bar -->
     <nav>
       <ul>
         <a href="#" id="icon"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
@@ -47,11 +48,10 @@
         <li><a href="about.html">About</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li id="list-item-index"><a href="services.html">Services</a></li>
       </ul>
     </nav>
 
-    <!-- Boton para volver arriba -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
     
     <main>
@@ -103,9 +103,9 @@
     <footer>
       Connect with us: 
       <ul>
-        <li><a href="https://www.instagram.com/"><img src="../images/icons/instagram-167-svgrepo-com.svg" alt="Instagram icon" loading="lazy"></a></li>
-        <li><a href="https://www.pinterest.com/"><img src="../images/icons/pinterest-color-svgrepo-com.svg" alt="Pinterest icon" loading="lazy"></a></li>
-        <li><a href="https://twitter.com/home"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/icons/instagram-167-svgrepo-com.svg" alt="Instagram icon" loading="lazy"></a></li>
+        <li><a href="https://www.pinterest.com/" target="_blank"><img src="../images/icons/pinterest-color-svgrepo-com.svg" alt="Pinterest icon" loading="lazy"></a></li>
+        <li><a href="https://twitter.com/home" target="_blank"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
       </ul>
     </footer>
   </body>

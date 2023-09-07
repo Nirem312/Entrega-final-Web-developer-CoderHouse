@@ -1,0 +1,13 @@
+#locations{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  %width-mobile {
+    width: auto !important;
+  }
+}

@@ -1,0 +1,124 @@
+@import '_variables';
+@import '_extends';
+
+@media (max-width: 800px) {
+
+  //Esconde la nav bar
+  nav{
+    display: none;
+  }
+
+  // Styles para el menu 
+
+  ul, li, #products{
+   flex-direction: column !important;
+  }
+
+  .burger{
+    text-align: center;
+    font-size: 45px;
+    padding: 24px;
+    margin-top: 35px;
+  }
+
+  .mobileMenu{
+    display: inline !important;
+  }
+
+  .mobileMenuNav{
+    display: none;
+    align-items: center;
+    li{
+      text-decoration: underline;
+      text-decoration-color: $text-highlight;
+      text-decoration-thickness: 2px;
+      a{
+        padding: 16px;
+      }
+    }
+  }
+
+  // ------------------------------
+
+  // Styles para el boton de volver arriba
+
+  .backToTop{
+    display: flex !important;
+    border-radius: 50% !important;
+    font-size: 15px;
+    padding: 11px !important;
+    position: fixed;
+    left: 2%;
+    bottom: 7vh;
+    opacity: 0.7;
+    border: 2px solid $text-highlight;
+    height: 65px;
+    a{
+      padding: 0;
+      img{
+        height: 37px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // ------------------------------ 
+
+  // Styles para el footer
+
+  footer{
+    margin-bottom: 25px;
+    ul{
+      flex-direction: row !important;
+      li{
+        a{
+          img{
+            height: 39px !important;
+            margin-inline: 0 !important;
+          }
+        }
+
+      }
+    }
+  }
+
+  // ------------------------------
+
+  // Ajustes varios
+
+  iframe, input, select, textarea, button{
+    @extend %width-mobile;
+  }
+
+  .contact{
+    section{
+      @extend %width-mobile;
+      justify-content: center;
+      display: flex;
+      flex-direction: column !important;
+      button{
+        @extend %width-mobile;
+      }
+    }
+  }
+  
+  .subtitle{
+    text-align: center !important;
+  }
+
+  p{
+    font-size: 19.2px;
+    text-align: left !important;
+  }
+  
+  h1, #productsTitle{
+    font-size: 64px !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    line-height: 70px;
+  }
+  
+  h2{
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../base/_variables';
+@import '../base/_mediaQuery';
+
+//Style para el footer
+
+footer{
+  color: $titles-text-color;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  ul{
+    li{
+      a{
+        img{
+          padding: 8px;
+          margin-top: 10px;
+          height: 40px !important;
+          border-radius: 40%;
+          margin-inline: 10px;
+          box-sizing: unset;
+
+          &:hover{
+            background-color: rgb(211, 211, 211);
+            transform: scale(1.15);
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

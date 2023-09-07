@@ -1,0 +1,67 @@
+@import '../base/_variables';
+@import '../base/_extends';
+
+// Style para pagina de contacto
+
+.contact{
+  @extend #locations;
+  section{
+    align-self: center;
+    width: 425px;
+    button{
+      width: 100%;
+      text-align: center;
+      margin: 5px;
+      padding: 14px;
+      justify-content: center;
+    }
+  }
+}
+
+#message{
+  resize: vertical;
+}
+
+input, select{
+  height: 56px;
+  width: 425px;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  margin: 5px;
+  box-sizing: border-box;
+  border-color: rgb(221, 221, 221);
+  font-size: 14px;
+  padding: 14px;
+}
+
+textarea{
+  @extend input;
+  height: 114px;
+}
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $text-highlight; 
+  border-radius: 0.6em;
+  color: $titles-text-color;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+  &:hover,:focus{
+    outline: 0;
+    text-decoration: underline;
+  }
+}

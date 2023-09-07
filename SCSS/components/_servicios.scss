@@ -1,0 +1,15 @@
+@import '../base/extends';
+@import '../base/variables';
+
+//Styles para pagina de servicios
+
+.subtitle{
+  @extend span;
+  @extend #locations;
+  font-size: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: normal;
+  margin: 15px;
+  text-shadow: -1px 0 $titles-shadowcolor,0 1px $titles-shadowcolor,1px 0 $titles-shadowcolor,0 -1px $titles-shadowcolor;
+}
