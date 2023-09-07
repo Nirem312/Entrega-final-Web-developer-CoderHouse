@@ -444,8 +444,10 @@ iframe {
   animation: animateBg 4s linear infinite;
   background: linear-gradient(0deg, #dd81a3, #ee7582, #fa4d60, #d72d33, #fa4d60, #ee7582, #dd81a3);
   background-size: 100% 1100%;
-  background-clip: text;
+  @supports (background-clip: text;) {
   -webkit-text-fill-color: transparent;
+  }
+  color: #e13238;
   overflow: hidden;
 }
 
