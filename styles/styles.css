@@ -471,8 +471,8 @@ iframe {
   margin-left: 5px !important;
 }
 .texto-grid p {
-  text-align: left;
-  padding: 0;
+  text-align: left !important;
+  padding: 0 !important;
 }
 
 html,
