@@ -446,6 +446,7 @@ iframe {
   background-size: 100% 1100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
 }
 
 @keyframes animateBg {
@@ -458,6 +459,20 @@ iframe {
 }
 #fan-gif {
   height: 360px;
+}
+
+.container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.texto-grid {
+  text-align: left !important;
+  margin-left: 5px !important;
+}
+.texto-grid p {
+  text-align: left;
+  padding: 0;
 }
 
 html,

@@ -36,11 +36,11 @@
 }
 
 .texto-grid{
-  text-align: left;
-  margin-left: 5px;
+  text-align: left !important;
+  margin-left: 5px !important;
   p{
-    text-align: left;
-    padding: 0;
+    text-align: left !important;
+    padding: 0 !important;
   }
 }
 
