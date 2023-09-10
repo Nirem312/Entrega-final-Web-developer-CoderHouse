@@ -4,20 +4,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Fin Bootstrap -->
     <link rel="stylesheet" href="../styles/styles.css"/>
     <link rel="icon" type="image/x-icon" href="../images/icons/fan-svgrepo-com(1).svg">
     <title>Fanatics</title>
   </head>
   <body onload="colorNavBar()">
-
+    
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Fin Bootstrap -->
+
     <script>
+      //Agrega un border bottom al item de la nav bar en la que se esta
       function colorNavBar(){
         let y = document.getElementById("list-item-index");
         y.style.borderBottom = "2px solid #e13238"
       }
+      //Esconde o muestra el menu en version movil cuando se clickea el icono
       function toggleMenu() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "flex") {
@@ -30,6 +37,7 @@
       }
     </script>
 
+    <!-- Menu para version movil -->
     <div class="mobileMenu">
       <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
         <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
@@ -43,7 +51,9 @@
         <li><a href="services.html">Services</a></li>
       </div>
     </div>
+    <!-- Fin menu para version movil -->
     
+    <!-- Nav bar -->
     <nav>
       <ul>
         <a href="#" id="icon"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
@@ -54,9 +64,12 @@
         <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
+    <!-- Fin nav bar -->
 
+    <!-- Boton para volver arriba en movil -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
     
+    <!-- Parte principal -->
     <main>
       <h1 id="productsTitle">
         Products
@@ -66,7 +79,9 @@
         Find the <span>exact</span> fan for you.
       </h2>
     </main>
+    <!-- Fin de parte principal -->
 
+    <!-- Bootstrap carousel -->
     <article>
       <p class="subtitle">
         Top sellers
@@ -106,9 +121,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
     </article>
+    <!-- Fin Bootstrap carousel -->
     
+    <!-- Seccion para ventiladores de pared -->
     <article id="WallMounted"> 
       <p class="subtitle">
         Wall Mounted Fans
@@ -124,9 +140,10 @@
         <img src="../images/fans/DDP-Propeller-Wall-Fan.png" alt="Picture of a propeller wall mounted fan" loading="lazy">
         <img src="../images/fans/FDP-Propeller-Wall-FRP-Fan.png" alt="Picture of a propeller wall mounted fan" loading="lazy">
       </div>
- 
     </article>
+    <!-- Fin de seccion para ventiladores de pared -->
 
+    <!-- Seccion para ventiladores axiales -->
     <article id="Axial"> 
       <p class="subtitle">
         Axial Fans
@@ -146,7 +163,9 @@
         <img src="../images/fans/VJBD-Axial-Fan.png" alt="Picture of an axial fan" loading="lazy">
       </div>
     </article>
+    <!-- Fin de seccion para ventiladores axiales -->
 
+    <!-- Seccion para ventiladores centrifugales -->
     <article id="Centrifugal"> 
       <p class="subtitle">
         Centrifugal Fans
@@ -163,7 +182,9 @@
         <img src="../images/fans/SWCBF-Centrifugal-FRP-Fan.png" alt="Picture of a centrifugal fan" loading="lazy">
       </div>
     </article>
+    <!-- Fin de seccion para ventiladores centrifugales -->
         
+    <!-- Footer -->
     <footer>
       Connect with us: 
       <ul>
@@ -172,5 +193,6 @@
         <li><a href="https://twitter.com/home" target="_blank"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
       </ul>
     </footer>
+    <!-- Fin footer -->
   </body>
 </html>

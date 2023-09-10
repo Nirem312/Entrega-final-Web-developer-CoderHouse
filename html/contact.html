@@ -11,10 +11,13 @@
   <body onload="colorNavBar()">
 
     <script>
+      //Agrega un border bottom al item de la nav bar en la que se esta
       function colorNavBar(){
         let y = document.getElementById("list-item-index");
         y.style.borderBottom = "2px solid #e13238"
       }
+
+      //Esconde o muestra el menu en version movil cuando se clickea el icono
       function toggleMenu() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "flex") {
@@ -27,6 +30,7 @@
       }
     </script>
 
+    <!-- Menu para version movil -->
     <div class="mobileMenu">
       <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
         <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
@@ -40,7 +44,9 @@
         <li><a href="services.html">Services</a></li>
       </div>
     </div>
-    
+    <!-- Fin menu para version movil -->
+
+    <!-- Nav bar -->
     <nav>
       <ul>
         <a href="#" id="icon"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
@@ -51,9 +57,12 @@
         <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
+    <!-- Fin nav bar -->
 
+    <!-- Boton para volver arriba en movil -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
     
+    <!-- Parte principal -->
     <main>
       <h1>
         Contact us
@@ -63,7 +72,9 @@
         We want to hear from <span>you</span>.
       </h2>
     </main>
-    
+    <!-- Fin de parte principal -->
+
+    <!-- Seccion de contacto -->
     <article> 
       <p>
         You can reach out to us about any inquiries or doubts and we'll reply within 24 hours.
@@ -86,7 +97,9 @@
         <button class="btn" type="submit" onclick="alert('Message sent! \nThank you for contacting us')">Send</button>
       </section>
     </div>
-        
+    <!-- Fin de seccion de contacto -->
+
+    <!-- Footer -->
     <footer>
       Connect with us: 
       <ul>
@@ -95,5 +108,6 @@
         <li><a href="https://twitter.com/home" target="_blank"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
       </ul>
     </footer>
+    <!-- Fin footer -->
   </body>
 </html>

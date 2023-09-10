@@ -11,10 +11,13 @@
   <body onload="colorNavBar()">
 
     <script>
+      //Agrega un border bottom al item de la nav bar en la que se esta
       function colorNavBar(){
         let y = document.getElementById("list-item-index");
         y.style.borderBottom = "2px solid #e13238"
       }
+
+      //Esconde o muestra el menu en version movil cuando se clickea el icono
       function toggleMenu() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "flex") {
@@ -27,6 +30,7 @@
       }
     </script>
 
+    <!-- Menu para version movil -->
     <div class="mobileMenu">
       <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
         <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
@@ -40,7 +44,9 @@
         <li><a href="services.html">Services</a></li>
       </div>
     </div>
-    
+    <!-- Fin menu para version movil -->
+
+    <!-- Nav bar -->
     <nav>
       <ul>
         <a href="#" id="icon"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
@@ -51,9 +57,12 @@
         <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
+    <!-- Fin nav bar -->
 
+    <!-- Boton para volver arriba en movil -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
     
+    <!-- Parte principal -->
     <main>
       <h1>
         About us
@@ -63,7 +72,9 @@
         Leading the air cooling industry since <span>1943</span>.
       </h2>
     </main>
-    
+    <!-- Fin de parte principal -->
+
+    <!-- Texto -->
     <article> 
       <p class="subtitle">
         Our history
@@ -76,7 +87,9 @@
         Now Fanatics leads the industry with the core principles of <span>innovation</span> and <span>sustainability</span> ensuring the best for future generations.
       </p>
     </article>
+    <!-- Fin texto -->
 
+    <!-- Locales -->
     <article id="locations"> 
       <p class="subtitle">
         Where to find us
@@ -84,20 +97,25 @@
       <p>
         Our main headquarters are located in Wolfsburg, Germany available from 08:00 to 18:00 EST time.
       </p>
-
+      
+      <!-- Mapa 1 -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4866.333262152236!2d10.7822924!3d52.4217784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47af924b829f4787%3A0x94cd12cbeb79f0f8!2sIrish%20Pub%20Wob-Wolfsburg!5e0!3m2!1sde!2suy!4v1690417590086!5m2!1sde!2suy" 
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- Fin mapa 1 -->
       <br>
 
       <p>
         Our secondary headquarters are located in Montevideo, Uruguay available from 10:00 to 20:00 EST time.
       </p>
 
+      <!-- Mapa 2 -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.99645258385095!2d-56.148560306083354!3d-34.90415012704113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f810fce50b97d%3A0x476ed1e8b3d06183!2sLa%20tienda%20de%20Chela!5e0!3m2!1sen!2suy!4v1690417005800!5m2!1sen!2suy" 
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+      <!-- Fin mapa 2 -->
     </article>
-        
+    <!-- Fin locales -->
+
+    <!-- Footer -->
     <footer>
       Connect with us: 
       <ul>
@@ -106,5 +124,6 @@
         <li><a href="https://twitter.com/home" target="_blank"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
       </ul>
     </footer>
+    <!-- Fin footer -->
   </body>
 </html>

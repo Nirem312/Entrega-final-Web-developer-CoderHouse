@@ -11,10 +11,13 @@
   <body onload="colorNavBar()">
 
     <script>
+      //Agrega un border bottom al item de la nav bar en la que se esta
       function colorNavBar(){
         let y = document.getElementById("list-item-index");
         y.style.borderBottom = "2px solid #e13238"
       }
+
+      //Esconde o muestra el menu en version movil cuando se clickea el icono
       function toggleMenu() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "flex") {
@@ -27,6 +30,7 @@
       }
     </script>
 
+    <!-- Menu para version movil -->
     <div class="mobileMenu">
       <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
         <img src="../images/icons/burger-menu-svgrepo-com.svg" alt="Burger menu icon">
@@ -40,7 +44,9 @@
         <li><a href="services.html">Services</a></li>
       </div>
     </div>
-    
+    <!-- Fin menu para version movil -->
+
+    <!-- Nav bar -->
     <nav>
       <ul>
         <a href="#" id="icon"><img src="../images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
@@ -51,9 +57,12 @@
         <li id="list-item-index"><a href="services.html">Services</a></li>
       </ul>
     </nav>
+    <!-- Fin nav bar -->
 
+    <!-- Boton para volver arriba en movil -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
     
+    <!-- Parte principal -->
     <main>
       <h1>
         Services
@@ -63,7 +72,9 @@
         How we can <span>help you</span>r business.
       </h2>
     </main>
+    <!-- Fin parte principal -->
     
+    <!-- Servicio 1 -->
     <article> 
       <p class="subtitle">
         Consultation
@@ -74,7 +85,9 @@
         Your air scientist will also conduct a survey to plot optimal fan locations, either on-site or through photos you submit.
       </p>
     </article>
+    <!-- Fin servicio 1 -->
 
+    <!-- Servicio 2 -->
     <article> 
       <p class="subtitle">
         Installation
@@ -86,7 +99,9 @@
         and are delivering the return on investment you expected. 
       </p>
     </article>
-
+    <!-- Fin servicio 2 -->
+    
+    <!-- Servicio 3 -->
     <article> 
       <p class="subtitle">
         Full package
@@ -99,7 +114,9 @@
         the exact solution you need is living up to your expectations.
       </p>
     </article>
+    <!-- Fin servicio 3 -->
         
+    <!-- Footer -->
     <footer>
       Connect with us: 
       <ul>
@@ -108,5 +125,6 @@
         <li><a href="https://twitter.com/home" target="_blank"><img src="../images/icons/twitter-color-svgrepo-com.svg" alt="Twitter icon" loading="lazy"></a></li>
       </ul>
     </footer>
+    <!-- Fin footer -->
   </body>
 </html>

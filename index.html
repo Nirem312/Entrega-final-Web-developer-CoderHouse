@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="icon" type="image/x-icon" href="images/icons/fan-svgrepo-com(1).svg">
     <title>Fanatics</title>
@@ -11,10 +13,12 @@
   <body onload="colorNavBar()">
 
     <script>
+      //Agrega un border bottom al item de la nav bar en la que se esta
       function colorNavBar(){
         let y = document.getElementById("list-item-index");
         y.style.borderBottom = "2px solid #e13238"
       }
+
       //Esconde o muestra el menu en version movil cuando se clickea el icono
       function toggleMenu() {
         var x = document.getElementById("myLinks");
@@ -42,7 +46,9 @@
           <li><a href="html/services.html">Services</a></li>
       </div>
     </div>
-    
+    <!-- Fin menu para version movil -->
+
+    <!-- Nav bar -->
     <nav>
       <ul>
         <a href="#" id="icon"><img src="images/icons/fan-svgrepo-com.svg" alt="Icon of a fan"></a>
@@ -54,9 +60,12 @@
 
       </ul>
     </nav>
+    <!-- Fin nav bar -->
 
+    <!-- Boton para volver arriba en movil -->
     <button class="backToTop"><a href="#"><img src="images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
-    
+
+    <!-- Seccion principal -->
     <main>
       <h1>
         Your number <br>
@@ -67,7 +76,9 @@
         We provide the best type of fan to fit the situation, <span>no matter the challenge</span>.
       </h2>
     </main>
-    
+    <!-- Fin seccion principal -->
+
+    <!-- Texto descriptivo -->
     <article id="index-article"> 
       <img src="images/icons/fan-gif.gif" alt="Gif de un ventilador girando" id="fan-gif">
       <p>
@@ -76,7 +87,64 @@
         to each situation we are faced with.
       </p>
     </article>
-        
+    <!-- Fin texto descriptivo -->
+
+    <!-- Bootstrap grid con cualidades de la empresa -->
+    <p class="subtitle">
+      We offer:
+    </p>
+    <div class="container text-center px-4 py-5">
+      <div class="row col row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <symbol id="bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fa4d60" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+              <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+            </svg>
+          </symbol>
+          <div class="texto-grid">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Speed</h3>
+            <p>We guarantee the best services available in a record-setting time.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <symbol id="bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fa4d60" class="bi bi-check-circle" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>            
+            </svg>
+          </symbol>
+          <div class="texto-grid">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Quality</h3>
+            <p>Our products and services guarantee the highest level of quality in the industry.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <symbol id="bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fa4d60" class="bi bi-check-circle" viewBox="0 0 16 16">
+              <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2h-7z"/>            
+            </svg>
+          </symbol>
+          <div class="texto-grid">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Experience</h3>
+            <p>We have more than 80 years of experience in the industry.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <symbol id="bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fa4d60" class="bi bi-check-circle" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>            
+            </svg>
+          </symbol>
+          <div class="texto-grid">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Innovation</h3>
+            <p>Our team is constantly researching and investigating ways of improving our services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Bootstrap grid con cualidades de la empresa -->
+    
+    <!-- Footer -->
     <footer>
       Connect with us: 
       <ul>
@@ -85,5 +153,6 @@
         <li><a href="https://twitter.com/home" target="_blank"><img src="images/icons/twitter-color-svgrepo-com.svg" alt="icono de Twitter" loading="lazy"></a></li>
       </ul>
     </footer>
+    <!-- Fin footer -->
   </body>
 </html>
