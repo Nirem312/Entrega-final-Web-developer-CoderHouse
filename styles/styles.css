@@ -47,6 +47,7 @@
     position: fixed;
     left: 2%;
     bottom: 7vh;
+    z-index: 100;
     opacity: 0.7;
     border: 2px solid #fa4d60;
     height: 65px;
@@ -240,6 +241,7 @@ textarea {
     position: fixed;
     left: 2%;
     bottom: 7vh;
+    z-index: 100;
     opacity: 0.7;
     border: 2px solid #fa4d60;
     height: 65px;
@@ -384,6 +386,7 @@ iframe {
     position: fixed;
     left: 2%;
     bottom: 7vh;
+    z-index: 100;
     opacity: 0.7;
     border: 2px solid #fa4d60;
     height: 65px;
@@ -471,8 +474,8 @@ iframe {
   margin-left: 5px !important;
 }
 .texto-grid p {
-  text-align: left !important;
-  padding: 0 !important;
+  text-align: left;
+  padding: 0;
 }
 
 html,
@@ -586,6 +589,7 @@ a:hover {
     position: fixed;
     left: 2%;
     bottom: 7vh;
+    z-index: 100;
     opacity: 0.7;
     border: 2px solid #fa4d60;
     height: 65px;
