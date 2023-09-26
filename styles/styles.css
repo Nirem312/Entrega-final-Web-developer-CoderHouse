@@ -312,6 +312,10 @@ li {
 #icon {
   display: flex;
   flex: 1;
+  justify-content: flex-start;
+}
+#icon:hover {
+  border-bottom: none;
 }
 
 .mobileMenuNav ul li, nav ul li {
@@ -325,7 +329,6 @@ li {
 }
 .mobileMenuNav ul li a, nav ul li a {
   text-decoration: none !important;
-  padding: 16px;
 }
 .mobileMenuNav ul a img:hover, nav ul a img:hover {
   transform: rotate(-360deg);

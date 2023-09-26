@@ -4,34 +4,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Negocio relacionado a la venta de ventiladores y soluciones de aire.">
+    <meta name="keywords" content="ventiladores, aire, soluciones, venta, servicios, ventilador">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="icon" type="image/x-icon" href="images/icons/fan-svgrepo-com(1).svg">
-    <title>Fanatics</title>
+    <title>Fanatics | Air solutions</title>
   </head>
   <body onload="colorNavBar()">
-
-    <script>
-      //Agrega un border bottom al item de la nav bar en la que se esta
-      function colorNavBar(){
-        let y = document.getElementById("list-item-index");
-        y.style.borderBottom = "2px solid #e13238"
-      }
-
-      //Esconde o muestra el menu en version movil cuando se clickea el icono
-      function toggleMenu() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "flex") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "flex";
-          x.style.flexDirection = "column";
-          x.style.justifyContent = "center";
-        }
-      }
-    </script>
-
     <!-- Menu para version movil -->
     <div class="mobileMenu">
       <a href="javascript:void(0);" class="burger" onclick="toggleMenu()">
@@ -154,5 +135,25 @@
       </ul>
     </footer>
     <!-- Fin footer -->
+
+    <script>
+      //Agrega un border bottom al item de la nav bar en la que se esta
+      function colorNavBar(){
+        let y = document.getElementById("list-item-index");
+        y.style.borderBottom = "2px solid #e13238"
+      }
+
+      //Esconde o muestra el menu en version movil cuando se clickea el icono
+      function toggleMenu() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+          x.style.flexDirection = "column";
+          x.style.justifyContent = "center";
+        }
+      }
+    </script>
   </body>
 </html>
