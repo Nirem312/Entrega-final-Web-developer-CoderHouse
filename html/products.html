@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Fin Bootstrap -->
     <link rel="stylesheet" href="../styles/styles.css"/>
+    <script src="../js/clases.js"></script>
+    <script src="../js/funciones.js"></script>
     <link rel="icon" type="image/x-icon" href="../images/icons/fan-svgrepo-com(1).svg">
     <title>Fanatics</title>
   </head>
@@ -68,48 +70,34 @@
 
     <!-- Boton para volver arriba en movil -->
     <button class="backToTop"><a href="#"><img src="../images/icons/down-chevron-svgrepo-com.svg" alt="Icon of an arrow pointing up"></a></button>
-    
+    <div class="divCarrito"><img src="../images//icons/cart-shopping-fast-svgrepo-com.svg" alt="" id="iconoCarrito"><p id="compras"></p></div>
     <!-- Parte principal -->
     <main>
       <h1 id="productsTitle">
-        Products
+        Productos
       </h1>
 
       <h2>
-        Find the <span>exact</span> fan for you.
+        Explore nuestros articulos en <span>oferta</span>!
       </h2>
     </main>
     <!-- Fin de parte principal -->
 
     <!-- Bootstrap carousel -->
     <article>
-      <p class="subtitle">
-        Top sellers
-      </p>
       <p>
-        These are some of our most requested products that you might be interested in
+        Clickee un articulo para agregarlo al carrito
       </p>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="#WallMounted">
-              <img src="../images/fans/DDR-Ring-Fan.png" alt="Picture of a ring wall mounted fan">
-            </a>
+            <img src="../images/guitars/CP1-HLA.png" alt="Picture of a ring wall mounted fan" id="guitarra1">
           </div>
           <div class="carousel-item">
-            <a href="#Axial">
-              <img src="../images/fans/TFBD-Axial-FRP-Fan.png" alt="Picture of an axial fan">
-            </a>
+            <img src="../images/guitars/CP1-HSS.png" alt="Picture of an axial fan" id="guitarra2">
           </div>
           <div class="carousel-item">
-            <a href="#Centrifugal">
-              <img src="../images/fans/CAE-SW-Centrifugal-Fan.png" alt="Picture of a centrifugal fan">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#Centrifugal">
-              <img src="../images/fans/SWCBF-Centrifugal-FRP-Fan.png" alt="Picture of a centrifugal fan">
-            </a>
+            <img src="../images/guitars/EGLP-610.png" alt="Picture of a centrifugal fan" id="guitarra3">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -123,66 +111,9 @@
       </div>
     </article>
     <!-- Fin Bootstrap carousel -->
-    
-    <!-- Seccion para ventiladores de pared -->
-    <article id="WallMounted"> 
-      <p class="subtitle">
-        Wall Mounted Fans
-      </p>
-      <p>
-        Wall Mounted Fans are designed for cost effective, general ventilation. 
-        They are available in direct and belt driven models, with aluminum or steel impellers. 
-        Fixed or adjustable pitch models are offered to meet a variety of application requirements. 
-        Wall Mounted Fans are available in ring or panel construction as well as standard or reverse flow.
-      </p>
-      <div id="products">
-        <img src="../images/fans/DDR-Ring-Fan.png" alt="Picture of a ring wall mounted fan" loading="lazy">
-        <img src="../images/fans/DDP-Propeller-Wall-Fan.png" alt="Picture of a propeller wall mounted fan" loading="lazy">
-        <img src="../images/fans/FDP-Propeller-Wall-FRP-Fan.png" alt="Picture of a propeller wall mounted fan" loading="lazy">
-      </div>
-    </article>
-    <!-- Fin de seccion para ventiladores de pared -->
-
-    <!-- Seccion para ventiladores axiales -->
-    <article id="Axial"> 
-      <p class="subtitle">
-        Axial Fans
-      </p>
-      <p>
-        Tubeaxial Fans are designed to handle a wide range of requirements, from general ventilation to process air supply. 
-        The mounting flexibility makes it an ideal choice for many industrial and commercial applications. 
-        Units are available as direct or belt driven, with steel or aluminum impellers that are fixed or adjustable blade pitch.
-
-        Vaneaxial Fans are designed for applications where large volumes of air are required at moderate to high pressures. 
-        Direct and belt driven models, with fixed and adjustable blade impellers, are available. 
-        The tubular design and high impeller efficiency provides maximum performance while using minimal space.
-      </p>
-      <div id="products">
-        <img src="../images/fans/BSTA-Axial-Fan.png" alt="Picture of an axial fan" loading="lazy">
-        <img src="../images/fans/TFBD-Axial-FRP-Fan.png" alt="Picture of an axial fan" loading="lazy">
-        <img src="../images/fans/VJBD-Axial-Fan.png" alt="Picture of an axial fan" loading="lazy">
-      </div>
-    </article>
-    <!-- Fin de seccion para ventiladores axiales -->
-
-    <!-- Seccion para ventiladores centrifugales -->
-    <article id="Centrifugal"> 
-      <p class="subtitle">
-        Centrifugal Fans
-      </p>
-      <p>
-        Centrifugal fans are designed for a wide range of air volumes and pressures. 
-        With backward inclined, backward curved, backward inclined airfoil, radial and forward curved impeller types, 
-        centrifugal fans offer the flexibility to match the performance and application at the highest efficiency. 
-        Most models are available in single-wide or double-wide configurations that allow for even higher volumes of air.
-      </p>
-      <div id="products">
-        <img src="../images/fans/CAE-DW-Centrifugal-Fan.png" alt="Picture of a centrifugal fan" loading="lazy">
-        <img src="../images/fans/CAE-SW-Centrifugal-Fan.png" alt="Picture of a centrifugal fan" loading="lazy">
-        <img src="../images/fans/SWCBF-Centrifugal-FRP-Fan.png" alt="Picture of a centrifugal fan" loading="lazy">
-      </div>
-    </article>
-    <!-- Fin de seccion para ventiladores centrifugales -->
+    <section class="contact">
+      <button class="btn"><a href="gestion.html">Gestionar carrito</a></button>
+    </section>
         
     <!-- Footer -->
     <footer>

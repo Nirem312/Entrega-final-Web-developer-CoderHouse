@@ -516,6 +516,10 @@ span, .subtitle {
   color: #fa4d60;
 }
 
+.carousel-item > img {
+  height: 240px;
+}
+
 p {
   color: #757575;
   font-size: 1.2rem;
@@ -538,6 +542,32 @@ a:hover {
 
 .mobileMenu, .backToTop {
   display: none;
+}
+
+#iconoCarrito{
+  height: 40px;
+}
+
+#compras{
+  all:unset;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.divCarrito {
+  display: flex !important;
+  border-radius: 50% !important;
+  font-size: 15px;
+  padding: 11px !important;
+  position: fixed;
+  left: 2%;
+  bottom: 7vh;
+  z-index: 100;
+  opacity: 0.7;
+  border: 2px solid #fa4d60;
+  height: 65px;
 }
 
 #locations, .subtitle, .contact, #index-article {
